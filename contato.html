@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica DIO</title>
+    <link rel="stylesheet" href="estiloPagPrinc.css">
+    <style>
+        form div + div {
+            margin-top: 1em;            
+        }
+        label {
+            display: inline-block;
+            width: 90px;
+            text-align: right;
+        }
+        input, textarea {
+            width: 300px;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        input:focus, textarea:focus {        
+            border-color: #000;
+        }
+        textarea {        
+        vertical-align: top;        
+        height: 5em;        
+        resize: vertical;
+        }        
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <menu>
+            <ul class="menuLista">
+                <li><a href="index.html">Página Principal</a></li>
+                <li><a href="sobre.html">Sobre a clínica</a></li>
+                <li><a href="horario.html">Horário de atendimento</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </menu>
+    </div>
+
+    <div class="principal">
+        <header>
+            <img src="asset/imagens/fotoHeaderPagPrincipal.jpg" alt="Capa da Clínica" height="100px" width="100%">
+        </header>
+        <main>
+            <h1>Onde nos encontrar</h1>
+            <p>Estamos localizados na Rua Maurício de Nassua, 1350 - Araçatuba, SP</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3719.8957056013137!2d-50.441660597805765!3d-21.1963016775781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1666909859079!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <form action="#">  
+
+                    <fieldset>
+                        <legend>Entre em contato</legend>
+                        <div>
+                            <label for="nome" required>Nome:</label>
+                            <input type="text" placeholder="Insira seu nome">
+                        </div>
+                        <div>
+                            <label for="email" required>E-mail</label>
+                            <input type="email" placeholder="Insira seu e-mail">
+                        </div>
+                        <div>
+                            <label for="assunto">Assunto</label>
+                            <input type="text" placeholder="Informe o assunto">
+                        </div>
+                        <div>
+                            <label for="mensagem" required>Digite a Mensagem</label>
+                            <input type="textarea" placeholder="Digite sua mensagem">
+                        </div>
+                        <div>
+                            <input type="submit" value="Enviar" >
+                            <input type="reset" value="Limpar">
+                        </div>
+                    </fieldset>
+                
+
+            </form>
+        </main>
+        
+        <footer>
+            Informações de contato:
+            Telefone: (18) 1234-4321
+            WhatsApp: (18) 1234-4321
+        </footer>
+    </div>
+</body>
+</html>

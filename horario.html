@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica DIO</title>
+    <link rel="stylesheet" href="estiloPagPrinc.css">
+    <style>
+        table {
+            width: 900px;
+            height: 450px;
+        }
+        table thead th{
+            background-color: black;
+            color: white;       
+        }
+        table tbody tr:nth-child(even){
+            background-color: rgb(187, 187, 187);            
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <menu>
+            <ul class="menuLista">
+                <li><a href="index.html">Página Principal</a></li>
+                <li><a href="sobre.html">Sobre a clínica</a></li>
+                <li><a href="horario.html">Horário de atendimento</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </menu>
+    </div>
+
+    <div class="principal">
+        <!--Cabeçalho da Página-->
+        <header>
+            <img src="asset/imagens/headerHorario.jpg" alt="Capa da Clínica" height="100px" width="100%">
+        </header>
+
+        <!--Tabela de horário-->
+        <main>
+            <table align="center" cellspacing="0" cellpadding="5">
+                <thead>
+                    <tr>
+                        <th colspan="4">Horário</th>
+                    </tr>
+                </thead>
+                <thead>
+                    <th>Serviços</th>
+                    <th>Segunda a Sexta</th>
+                    <th>Sábados</th>
+                    <th>Feriados</th>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Clínica  Geral</td>
+                        <td>08h - 19h</td>
+                        <td>08h - 14h</td>
+                        <td>08h - 14h</td>
+                    </tr>
+                    <tr>
+                        <td>Psicologia</td>
+                        <td>08h - 19h</td>
+                        <td>08h - 14h</td>
+                        <td>08h - 14h</td>
+                    </tr>
+                    <tr>
+                        <td>Pediatria</td>
+                        <td>08h - 19h</td>
+                        <td>08h - 14h</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Oftalmologia</td>
+                        <td>08h - 19h</td>
+                        <td>08h - 14h</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+
+        <!--Footer Página-->
+        <footer>
+            Informações de contato:
+            Telefone: (18) 1234-4321
+            WhatsApp: (18) 1234-4321
+        </footer>
+    </div>
+</body>
+</html>
